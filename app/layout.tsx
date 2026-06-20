@@ -35,7 +35,8 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${outfit.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground bg-mesh-gradient">
+      <body className="min-h-full flex flex-col bg-background bg
+      -repeat text-foreground bg-mesh-gradient">
         <Navbar />
         {children}
       </body>

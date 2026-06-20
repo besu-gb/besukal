@@ -103,7 +103,12 @@
   body {
     @apply bg-background text-foreground font-sans antialiased selection:bg-primary/10 selection:text-primary overflow-x-hidden;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading tracking-tight text-foreground;
   }
 }
@@ -119,10 +124,22 @@ html {
 
 /* Background Mesh Gradient - matching reference image */
 .bg-mesh-gradient {
-  background-image: 
-    radial-gradient(circle at 15% 50%, rgba(135, 155, 255, 0.5) 0%, transparent 45%),
-    radial-gradient(circle at 85% 30%, rgba(255, 175, 235, 0.45) 0%, transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 1) 0%, transparent 60%);
+  background-image:
+    radial-gradient(
+      circle at 15% 50%,
+      rgba(135, 155, 255, 0.5) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(255, 175, 235, 0.45) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(255, 255, 255, 1) 0%,
+      transparent 60%
+    );
   background-color: #ffffff;
 }
 
@@ -147,8 +164,12 @@ html {
 
 /* Marquee Animations */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 .animate-marquee {
   animation: marquee 40s linear infinite;
@@ -170,7 +191,12 @@ html {
 .section-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.08), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.08),
+    transparent
+  );
 }
 
 /* Testimonial card styles */
@@ -194,69 +220,9 @@ html {
   transform: translateY(40px);
 }
 
-/* ── Horizontal Scroll – Skills Section ────────────────── */
-.skills-horizontal-track {
-  display: flex;
-  flex-wrap: nowrap;
-  width: max-content;
-  will-change: transform;
-}
-
-.skills-horizontal-track .skill-panel {
-  flex-shrink: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-/* Parallax layer behind skill cards — moves slower */
-.skills-parallax-layer {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  will-change: transform;
-}
-
-/* Individual skill card in the horizontal section */
-.skill-card {
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 1.5rem;
-  box-shadow: 0 8px 30px rgb(0 0 0 / 0.04);
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.skill-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 60px rgb(0 0 0 / 0.08);
-}
-
-/* Skill proficiency bar */
-.skill-bar-track {
-  width: 100%;
-  height: 6px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-}
-
-.skill-bar-fill {
-  height: 100%;
-  border-radius: 3px;
-  background: linear-gradient(90deg, #1A1A1A, #444);
-  transform-origin: left;
-  will-change: transform;
-}
-
 /* ── Stacked Cards – Projects Section (Dark) ───────────── */
 .projects-dark-section {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   color: #ffffff;
   position: relative;
   overflow: hidden;
@@ -268,8 +234,16 @@ html {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(135, 155, 255, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 30%, rgba(255, 175, 235, 0.06) 0%, transparent 50%);
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(135, 155, 255, 0.08) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(255, 175, 235, 0.06) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 
@@ -352,7 +326,7 @@ html {
 /* ── Dark-to-Light Transition Gradient ─────────────────── */
 .dark-to-light-transition {
   height: 200px;
-  background: linear-gradient(to bottom, #1A1A1A, transparent);
+  background: linear-gradient(to bottom, #1a1a1a, transparent);
   pointer-events: none;
 }
 

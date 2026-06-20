@@ -7,7 +7,7 @@ import Footer from "@/components/sections/Footer";
 export default function Home() {
   return (
     <>
-      <div className="overflow-hidden">
+      <div className="overflow-x-hidden">
         <HeroSection />
         <ProjectsSection />
         <TestimonialsSection />

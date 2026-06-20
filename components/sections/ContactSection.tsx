@@ -87,7 +87,7 @@ export default function ContactSection() {
 
       <div className="max-w-7xl mx-auto relative z-10 text-center">
         {/* Large CTA headline with word-by-word animation */}
-        <h2 className="text-[2.8rem] sm:text-[4rem] lg:text-[6rem] font-heading font-bold text-black leading-[1.05] mb-8 overflow-hidden">
+        <h2 className="text-[2.8rem] pb-2 sm:text-[4rem] lg:text-[6rem] font-heading font-bold text-black leading-[1.05] mb-8 overflow-hidden">
           {headline.split(" ").map((word, i) => (
             <span
               key={i}
@@ -107,11 +107,12 @@ export default function ContactSection() {
         {/* Buttons */}
         <div className="cta-buttons flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="mailto:hello@besukal.dev"
+            href="mailto:besukalgobena@gmail.com"
+            target="blank"
             className="btn-pill-dark gap-2 group text-base px-8"
           >
             <Mail className="w-4 h-4" />
-            hello@besukal.dev
+            besukalgobena@gmail.com
           </Link>
           <Link
             href="/contact"
